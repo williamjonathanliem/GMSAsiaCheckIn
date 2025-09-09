@@ -79,6 +79,27 @@
       font-size:13px; font-weight:500; border-top:1px solid rgba(255,255,255,.05)
     }
     .footer p{ margin:0; opacity:.8 }
+
+    .controls.main-buttons{
+      align-items: stretch;
+    }
+
+    .filebtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      line-height: 1;
+    }
+
+    .filebtn input{
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -86,7 +107,7 @@
     <header class="header" role="banner">
       <div class="brand">
         <img src="Logo.png" alt="GMS Logo" class="logo" />
-        <span>AOG Conference Asia 2025, Check In</span>
+        <span>AOG Conference Asia 2025 Check In</span>
       </div>
     </header>
 
@@ -96,7 +117,6 @@
       <div class="setup-grid">
         <select id="org" class="select" aria-label="Choose GMS">
           <option value="">Choose your GMS</option>
-          <option value="gms-asia">GMS Asia</option><!-- added -->
           <option value="gms-kl">GMS KL</option>
           <option value="gms-taiwan">GMS Taiwan</option>
           <option value="rosc-singapore">ROSC Singapore</option>
